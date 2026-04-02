@@ -134,11 +134,11 @@ button:hover {
   font-size: 12px;
   border-radius: 6px;
   border: none;
-  background-color: rgba(255,0,0,0.8);
+  background-color: black;
   color: white;
   cursor: pointer;
 }
 
 .card .remove-btn:hover {
-  background-color: rgba(255,0,0,1);
+  background-color: black;
 }
