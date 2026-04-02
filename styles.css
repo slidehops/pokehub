@@ -124,6 +124,7 @@ button:hover {
 #perfect-section .cards { background-color: rgba(0,255,0,0.05); padding: 10px; border-radius: 12px; }
 #costume-section .cards { background-color: rgba(255,105,180,0.05); padding: 10px; border-radius: 12px; }
 #costume-shiny-section .cards { background-color: rgba(255,20,147,0.05); padding: 10px; border-radius: 12px; }
+#background-section .cards { background-color: rgba(135,206,250,0.05); padding: 10px; border-radius: 12px; }
 
 .card .remove-btn {
   position: absolute;
