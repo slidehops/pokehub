@@ -110,6 +110,7 @@ function getSectionId(category) {
     case "ultra": return "ultra-section";
     case "perfect": return "perfect-section";
     case "costume": return "costume-section";
+    case "background": return "background-section";
     default: return "normal-section";
   }
 }
