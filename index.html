@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Pokédex</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Custom Pokédex</h1>
+
+  <div class="input-area">
+    <input id="pokemonInput" placeholder="pikachu or detective pikachu">
+
+    <!-- Location Background Dropdown -->
+    <select id="locationSelect">
+      <option value="">No Location Background</option>
+    </select>
+
+    <!-- Special Background Dropdown -->
+    <select id="specialSelect">
+      <option value="">No Special Background</option>
+    </select>
+
+    <!-- Category Dropdown -->
+    <select id="categorySelect">
+      <option value="">Normal</option>
+      <option value="shiny">Shiny</option>
+      <option value="legendary">Legendary</option>
+      <option value="mythical">Mythical</option>
+      <option value="ultra">Ultra Beast</option>
+      <option value="perfect">100% IV</option>
+      <option value="costume">Costume</option>
+    </select>
+
+    <button onclick="addPokemon()">Add</button>
+    <button onclick="removeAll()">Remove All</button>
+  </div>
+
+  <!-- Pokedex sections by category -->
+  <div id="pokedex">
+
+    <div id="normal-section">
+      <h2>Normal</h2>
+      <div class="cards"></div>
+    </div>
+
+    <div id="shiny-section">
+      <h2>Shiny</h2>
+      <div class="cards"></div>
+    </div>
+
+    <div id="legendary-section">
+      <h2>Legendary</h2>
+      <div class="cards"></div>
+    </div>
+
+    <div id="mythical-section">
+      <h2>Mythical</h2>
+      <div class="cards"></div>
+    </div>
+
+    <div id="ultra-section">
+      <h2>Ultra Beast</h2>
+      <div class="cards"></div>
+    </div>
+
+    <div id="perfect-section">
+      <h2>100% IV</h2>
+      <div class="cards"></div>
+    </div>
+
+    <div id="costume-section">
+      <h2>Costume</h2>
+      <div class="cards"></div>
+    </div>
+
+    <div id="background-section">
+      <h2>Background</h2>
+      <div class="cards"></div>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

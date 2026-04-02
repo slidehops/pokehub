@@ -1,0 +1,143 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000912;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Input Area */
+.input-area {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+input {
+  width: 140px;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+}
+
+select {
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #ddd;
+}
+
+/* Category Sections */
+#pokedex > div {
+  margin-bottom: 40px;
+}
+
+#pokedex h2 {
+  color: white;
+  border-bottom: 2px solid #444;
+  padding-bottom: 4px;
+  margin-bottom: 15px;
+}
+
+/* Card Grid */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+/* Individual Card Styling */
+.card {
+  position: relative;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #444; /* fallback */
+  background-size: cover;
+  background-position: center;
+  width: 160px;
+  height: 160px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  z-index: 1;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  margin-bottom: -15px;
+  z-index: 2;
+  position: relative;
+}
+
+.card h3 {
+  position: relative;
+  z-index: 2;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+  text-transform: capitalize;
+}
+
+/* Optional: subtle background color for each category section */
+#normal-section .cards { background-color: rgba(255,255,255,0.02); padding: 10px; border-radius: 12px; }
+#shiny-section .cards { background-color: rgba(255,255,255,0.04); padding: 10px; border-radius: 12px; }
+#legendary-section .cards { background-color: rgba(255,215,0,0.05); padding: 10px; border-radius: 12px; }
+#mythical-section .cards { background-color: rgba(138,43,226,0.05); padding: 10px; border-radius: 12px; }
+#ultra-section .cards { background-color: rgba(0,255,255,0.05); padding: 10px; border-radius: 12px; }
+#perfect-section .cards { background-color: rgba(0,255,0,0.05); padding: 10px; border-radius: 12px; }
+#costume-section .cards { background-color: rgba(255,105,180,0.05); padding: 10px; border-radius: 12px; }
+#costume-shiny-section .cards { background-color: rgba(255,20,147,0.05); padding: 10px; border-radius: 12px; }
+
+.card .remove-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: rgba(255,0,0,0.8);
+  color: white;
+  cursor: pointer;
+}
+
+.card .remove-btn:hover {
+  background-color: rgba(255,0,0,1);
+}
