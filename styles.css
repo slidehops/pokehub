@@ -29,22 +29,38 @@ input {
   width: 140px;
   padding: 8px;
   border-radius: 6px;
-  border: none;
+  border-width: 2px;
+  border-style: inset;
+  border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  background-color: black;
+  color: white;
+}
+
+input::placeholder {
+  color: white;
 }
 
 select {
   padding: 8px;
   border-radius: 6px;
-  border: none;
+  border-width: 2px;
+  border-style: inset;
+  border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  background-color: black;
+  color: white;
 }
 
 button {
   padding: 8px 12px;
   border: none;
   border-radius: 6px;
-  background: white;
   cursor: pointer;
   font-weight: bold;
+  background-color: black;
+  color: white;
+  border-width: 2px;
+  border-style: inset;
+  border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
 }
 
 button:hover {
@@ -81,7 +97,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-color: #444; /* fallback */
+  background-color: #111; /* fallback */
   background-size: cover;
   background-position: center;
   width: 160px;
