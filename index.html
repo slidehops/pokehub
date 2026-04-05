@@ -11,7 +11,12 @@
   <h1>Custom Pokédex</h1>
 
   <div class="input-area">
-    <input id="pokemonInput" placeholder="add pokemon">
+    <input id="pokemonInput" placeholder="pikachu or detective pikachu">
+
+    <input id="cpInput" placeholder="CP" type="number" style="width:70px">
+    <input id="hpInput" placeholder="HP" type="number" style="width:60px">
+    <input id="attackInput" placeholder="ATK" type="number" style="width:55px">
+    <input id="defenseInput" placeholder="DEF" type="number" style="width:55px">
 
     <!-- Location Background Dropdown -->
     <select id="locationSelect">
@@ -25,27 +30,24 @@
 
     <!-- Category Dropdown -->
     <select id="categorySelect">
-      <option value="">Normal</option>
       <option value="shiny">Shiny</option>
       <option value="legendary">Legendary</option>
       <option value="mythical">Mythical</option>
       <option value="ultra">Ultra Beast</option>
       <option value="perfect">100% IV</option>
       <option value="costume">Costume</option>
-      <option value="background">Background</option>
+      <option value="traded">Traded</option>
     </select>
 
     <button onclick="addPokemon()">Add</button>
     <button onclick="removeAll()">Remove All</button>
+    <button onclick="saveDataToFile()">💾 Save Data</button>
+    <button onclick="loadDataFromFile()">📂 Load Save</button>
+    <button onclick="saveAsImage()">🖼 Save Image</button>
   </div>
 
   <!-- Pokedex sections by category -->
   <div id="pokedex">
-
-    <div id="normal-section">
-      <h2>Normal</h2>
-      <div class="cards"></div>
-    </div>
 
     <div id="shiny-section">
       <h2>Shiny</h2>
@@ -77,14 +79,16 @@
       <div class="cards"></div>
     </div>
 
-    <div id="background-section">
-      <h2>Background</h2>
+    <div id="traded-section">
+      <h2>Traded</h2>
       <div class="cards"></div>
     </div>
 
   </div>
+  </div>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
